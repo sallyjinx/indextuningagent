@@ -1,0 +1,4 @@
+condition,slots,create_attempts,create_successes,drop_attempts,drop_successes,create_submitted,drop_submitted,create_ddl_ms,drop_ddl_ms,ddl_ms,model_calls,model_ms,rejected,failed,model_error,invalid_response,unauthorized_execution,budget_violations,budget_rejections,prompt_tokens,completion_tokens,total_tokens,calls_without_usage,known_token_subtotal
+no_tuning,36,0,0,0,0,0,0,0.0,0.0,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,{}
+rule,36,18,18,12,12,18,12,920.2081829425879,18.362122937105596,938.5703058796935,0,0.0,0,0,0,0,0,0,0,0,0,0,0,{}
+autonomous,36,9,9,4,4,9,4,483.51355001796037,10.494153946638107,494.0077039645985,33,50895.918094029184,0,0,0,0,0,0,0,685929,2047,687976,0,"{""prompt_tokens"": 685929, ""completion_tokens"": 2047, ""total_tokens"": 687976}"

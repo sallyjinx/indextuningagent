@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "complete": true,
+  "formal_ready": true,
+  "mode": "formal",
+  "study_kind": "assignment",
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "run_starts": 9,
+    "run_ends": 9,
+    "phases": 27,
+    "slots": 108,
+    "measurements": 216,
+    "model_calls": 32
+  },
+  "model_calls_by_run": {
+    "1:autonomous": 12,
+    "2:autonomous": 10,
+    "3:autonomous": 10
+  },
+  "status_counts": {
+    "noop": 67,
+    "applied": 41
+  }
+}

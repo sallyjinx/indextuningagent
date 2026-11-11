@@ -1,0 +1,522 @@
+{
+  "seed": 29,
+  "phases": [
+    {
+      "phase": 1,
+      "queries": [
+        {
+          "template_id": 1,
+          "parameters": [
+            679
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            642
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            49,
+            "2024-02-03",
+            "2024-03-04"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-01-12",
+            "2024-02-11"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            251
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            12,
+            "2024-01-23",
+            "2024-02-22"
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            834,
+            "2024-04-20",
+            "2024-05-20"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            605
+          ]
+        },
+        {
+          "template_id": 6,
+          "parameters": [
+            345,
+            887
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            234,
+            "2024-03-29",
+            "2024-04-28"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            753
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            86,
+            "2024-02-14",
+            "2024-03-15"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            568
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            198
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            160,
+            "2024-03-07",
+            "2024-04-06"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-01-01",
+            "2024-01-31"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            531
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            790
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            716
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            271,
+            "2024-04-09",
+            "2024-05-09"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            494
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            197,
+            "2024-03-18",
+            "2024-04-17"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            827
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            123,
+            "2024-02-25",
+            "2024-03-26"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "queries": [
+        {
+          "template_id": 5,
+          "parameters": [
+            622,
+            "2024-03-07",
+            "2024-04-06"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            92
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            145
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            986
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            834,
+            "2024-04-20",
+            "2024-05-20"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            933
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            569,
+            "2024-02-25",
+            "2024-03-26"
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            516,
+            "2024-02-14",
+            "2024-03-15"
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            12,
+            "2024-01-23",
+            "2024-02-22"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            198
+          ]
+        },
+        {
+          "template_id": 6,
+          "parameters": [
+            345,
+            887
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-01-12",
+            "2024-02-11"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            774
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            728,
+            "2024-03-29",
+            "2024-04-28"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            251
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            39
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            781,
+            "2024-04-09",
+            "2024-05-09"
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            675,
+            "2024-03-18",
+            "2024-04-17"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            531
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            880
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-01-01",
+            "2024-01-31"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            827
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            463,
+            "2024-02-03",
+            "2024-03-04"
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            494
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "queries": [
+        {
+          "template_id": 6,
+          "parameters": [
+            345,
+            887
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            622,
+            "2024-03-07",
+            "2024-04-06"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-11-09",
+            "2024-12-09"
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            728,
+            "2024-03-29",
+            "2024-04-28"
+          ]
+        },
+        {
+          "template_id": 6,
+          "parameters": [
+            308,
+            834
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            86,
+            "2024-02-14",
+            "2024-03-15"
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            781,
+            "2024-04-09",
+            "2024-05-09"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-11-20",
+            "2024-12-20"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-01-01",
+            "2024-01-31"
+          ]
+        },
+        {
+          "template_id": 5,
+          "parameters": [
+            675,
+            "2024-03-18",
+            "2024-04-17"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-01-12",
+            "2024-02-11"
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            123,
+            "2024-02-25",
+            "2024-03-26"
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            12,
+            "2024-01-23",
+            "2024-02-22"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-10-18",
+            "2024-11-17"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-09-15",
+            "2024-10-15"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            827
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            531
+          ]
+        },
+        {
+          "template_id": 1,
+          "parameters": [
+            494
+          ]
+        },
+        {
+          "template_id": 4,
+          "parameters": [
+            49,
+            "2024-02-03",
+            "2024-03-04"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-10-07",
+            "2024-11-06"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-10-29",
+            "2024-11-28"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-09-04",
+            "2024-10-04"
+          ]
+        },
+        {
+          "template_id": 3,
+          "parameters": [
+            "2024-09-26",
+            "2024-10-26"
+          ]
+        },
+        {
+          "template_id": 2,
+          "parameters": [
+            774
+          ]
+        }
+      ]
+    }
+  ]
+}

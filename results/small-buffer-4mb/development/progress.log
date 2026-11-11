@@ -1,0 +1,231 @@
+[2026-11-11T00:33:53+08:00] 正在连接专用 PostgreSQL，准备执行 command=run
+[2026-11-11T00:33:53+08:00] 实验日志将写入 artifacts/development/events.jsonl
+[2026-11-11T00:33:53+08:00] 实验开始 mode=dev seed=11 repeats=1 runs=3 slots=36
+[2026-11-11T00:33:53+08:00] 运行开始 [1/3] repeat=1 condition=No tuning：检查环境并清理候选索引
+[2026-11-11T00:33:53+08:00] 阶段开始 repeat=1 condition=No tuning phase=1 stopped=True
+[2026-11-11T00:33:53+08:00] 槽位 1/36 (0.0%) phase=1 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:54+08:00] Before 完成 mean_ms=5.070708 indexes=[]
+[2026-11-11T00:33:54+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:54+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:54+08:00] 槽位完成 [1/36 2.8%] after_ms=4.820417 stopped=True
+[2026-11-11T00:33:54+08:00] 槽位 2/36 (2.8%) phase=1 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:54+08:00] Before 完成 mean_ms=5.128083 indexes=[]
+[2026-11-11T00:33:54+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:54+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:54+08:00] 槽位完成 [2/36 5.6%] after_ms=4.934417 stopped=True
+[2026-11-11T00:33:54+08:00] 槽位 3/36 (5.6%) phase=1 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:55+08:00] Before 完成 mean_ms=5.025500 indexes=[]
+[2026-11-11T00:33:55+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:55+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:55+08:00] 槽位完成 [3/36 8.3%] after_ms=4.943917 stopped=True
+[2026-11-11T00:33:55+08:00] 槽位 4/36 (8.3%) phase=1 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:55+08:00] Before 完成 mean_ms=4.912208 indexes=[]
+[2026-11-11T00:33:55+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:55+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:55+08:00] 槽位完成 [4/36 11.1%] after_ms=4.934667 stopped=True
+[2026-11-11T00:33:55+08:00] 阶段开始 repeat=1 condition=No tuning phase=2 stopped=True
+[2026-11-11T00:33:55+08:00] 槽位 5/36 (11.1%) phase=2 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:56+08:00] Before 完成 mean_ms=4.941625 indexes=[]
+[2026-11-11T00:33:56+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:56+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:56+08:00] 槽位完成 [5/36 13.9%] after_ms=4.941542 stopped=True
+[2026-11-11T00:33:56+08:00] 槽位 6/36 (13.9%) phase=2 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:56+08:00] Before 完成 mean_ms=4.881500 indexes=[]
+[2026-11-11T00:33:56+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:56+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:57+08:00] 槽位完成 [6/36 16.7%] after_ms=4.942458 stopped=True
+[2026-11-11T00:33:57+08:00] 槽位 7/36 (16.7%) phase=2 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:57+08:00] Before 完成 mean_ms=4.952708 indexes=[]
+[2026-11-11T00:33:57+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:57+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:57+08:00] 槽位完成 [7/36 19.4%] after_ms=4.987792 stopped=True
+[2026-11-11T00:33:57+08:00] 槽位 8/36 (19.4%) phase=2 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:57+08:00] Before 完成 mean_ms=5.052250 indexes=[]
+[2026-11-11T00:33:57+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:57+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:58+08:00] 槽位完成 [8/36 22.2%] after_ms=5.075708 stopped=True
+[2026-11-11T00:33:58+08:00] 阶段开始 repeat=1 condition=No tuning phase=3 stopped=True
+[2026-11-11T00:33:58+08:00] 槽位 9/36 (22.2%) phase=3 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:58+08:00] Before 完成 mean_ms=5.277167 indexes=[]
+[2026-11-11T00:33:58+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:58+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:58+08:00] 槽位完成 [9/36 25.0%] after_ms=5.111708 stopped=True
+[2026-11-11T00:33:58+08:00] 槽位 10/36 (25.0%) phase=3 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:58+08:00] Before 完成 mean_ms=5.137750 indexes=[]
+[2026-11-11T00:33:58+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:58+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:59+08:00] 槽位完成 [10/36 27.8%] after_ms=5.077000 stopped=True
+[2026-11-11T00:33:59+08:00] 槽位 11/36 (27.8%) phase=3 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:33:59+08:00] Before 完成 mean_ms=5.043792 indexes=[]
+[2026-11-11T00:33:59+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:33:59+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:33:59+08:00] 槽位完成 [11/36 30.6%] after_ms=5.160625 stopped=True
+[2026-11-11T00:33:59+08:00] 槽位 12/36 (30.6%) phase=3 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:00+08:00] Before 完成 mean_ms=5.109125 indexes=[]
+[2026-11-11T00:34:00+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:34:00+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=[]；开始 After 测量
+[2026-11-11T00:34:00+08:00] 槽位完成 [12/36 33.3%] after_ms=5.199458 stopped=True
+[2026-11-11T00:34:00+08:00] 运行完成 [1/3] repeat=1 condition=No tuning model_calls=0 indexes=[]
+[2026-11-11T00:34:00+08:00] 运行开始 [2/3] repeat=1 condition=Rule baseline：检查环境并清理候选索引
+[2026-11-11T00:34:00+08:00] 阶段开始 repeat=1 condition=Rule baseline phase=1 stopped=False
+[2026-11-11T00:34:00+08:00] 槽位 13/36 (33.3%) phase=1 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:01+08:00] Before 完成 mean_ms=4.917208 indexes=[]
+[2026-11-11T00:34:01+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:01+08:00] 准备执行动作 action=CREATE index=I1
+[2026-11-11T00:34:01+08:00] 动作完成 status=applied ddl_ms=40.334 indexes=['I1']；开始 After 测量
+[2026-11-11T00:34:01+08:00] 槽位完成 [13/36 36.1%] after_ms=1.172500 stopped=False
+[2026-11-11T00:34:01+08:00] 槽位 14/36 (36.1%) phase=1 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:01+08:00] Before 完成 mean_ms=1.181875 indexes=['I1']
+[2026-11-11T00:34:01+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:01+08:00] 准备执行动作 action=CREATE index=I4
+[2026-11-11T00:34:01+08:00] 动作完成 status=applied ddl_ms=50.484 indexes=['I1', 'I4']；开始 After 测量
+[2026-11-11T00:34:01+08:00] 槽位完成 [14/36 38.9%] after_ms=1.165125 stopped=False
+[2026-11-11T00:34:01+08:00] 槽位 15/36 (38.9%) phase=1 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:01+08:00] Before 完成 mean_ms=1.121167 indexes=['I1', 'I4']
+[2026-11-11T00:34:01+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:01+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:34:01+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1', 'I4']；开始 After 测量
+[2026-11-11T00:34:01+08:00] 槽位完成 [15/36 41.7%] after_ms=1.185042 stopped=True
+[2026-11-11T00:34:01+08:00] 槽位 16/36 (41.7%) phase=1 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:01+08:00] Before 完成 mean_ms=1.170083 indexes=['I1', 'I4']
+[2026-11-11T00:34:01+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:34:01+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1', 'I4']；开始 After 测量
+[2026-11-11T00:34:01+08:00] 槽位完成 [16/36 44.4%] after_ms=1.167042 stopped=True
+[2026-11-11T00:34:01+08:00] 阶段开始 repeat=1 condition=Rule baseline phase=2 stopped=False
+[2026-11-11T00:34:01+08:00] 槽位 17/36 (44.4%) phase=2 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:01+08:00] Before 完成 mean_ms=4.352042 indexes=['I1', 'I4']
+[2026-11-11T00:34:01+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:01+08:00] 准备执行动作 action=DROP index=I1
+[2026-11-11T00:34:01+08:00] 动作完成 status=applied ddl_ms=1.656 indexes=['I4']；开始 After 测量
+[2026-11-11T00:34:02+08:00] 槽位完成 [17/36 47.2%] after_ms=4.205625 stopped=False
+[2026-11-11T00:34:02+08:00] 槽位 18/36 (47.2%) phase=2 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:02+08:00] Before 完成 mean_ms=4.404542 indexes=['I4']
+[2026-11-11T00:34:02+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:02+08:00] 准备执行动作 action=DROP index=I4
+[2026-11-11T00:34:02+08:00] 动作完成 status=applied ddl_ms=1.592 indexes=[]；开始 After 测量
+[2026-11-11T00:34:02+08:00] 槽位完成 [18/36 50.0%] after_ms=5.031500 stopped=False
+[2026-11-11T00:34:02+08:00] 槽位 19/36 (50.0%) phase=2 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:02+08:00] Before 完成 mean_ms=5.104833 indexes=[]
+[2026-11-11T00:34:02+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:02+08:00] 准备执行动作 action=CREATE index=I2
+[2026-11-11T00:34:02+08:00] 动作完成 status=applied ddl_ms=45.805 indexes=['I2']；开始 After 测量
+[2026-11-11T00:34:03+08:00] 槽位完成 [19/36 52.8%] after_ms=1.231750 stopped=False
+[2026-11-11T00:34:03+08:00] 槽位 20/36 (52.8%) phase=2 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:03+08:00] Before 完成 mean_ms=1.221250 indexes=['I2']
+[2026-11-11T00:34:03+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:03+08:00] 准备执行动作 action=CREATE index=I5
+[2026-11-11T00:34:03+08:00] 动作完成 status=applied ddl_ms=72.838 indexes=['I2', 'I5']；开始 After 测量
+[2026-11-11T00:34:03+08:00] 槽位完成 [20/36 55.6%] after_ms=1.198333 stopped=False
+[2026-11-11T00:34:03+08:00] 阶段开始 repeat=1 condition=Rule baseline phase=3 stopped=False
+[2026-11-11T00:34:03+08:00] 槽位 21/36 (55.6%) phase=3 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:03+08:00] Before 完成 mean_ms=3.699375 indexes=['I2', 'I5']
+[2026-11-11T00:34:03+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:03+08:00] 准备执行动作 action=DROP index=I2
+[2026-11-11T00:34:03+08:00] 动作完成 status=applied ddl_ms=1.411 indexes=['I5']；开始 After 测量
+[2026-11-11T00:34:03+08:00] 槽位完成 [21/36 58.3%] after_ms=3.691583 stopped=False
+[2026-11-11T00:34:03+08:00] 槽位 22/36 (58.3%) phase=3 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:03+08:00] Before 完成 mean_ms=3.641292 indexes=['I5']
+[2026-11-11T00:34:03+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:03+08:00] 准备执行动作 action=DROP index=I5
+[2026-11-11T00:34:03+08:00] 动作完成 status=applied ddl_ms=1.571 indexes=[]；开始 After 测量
+[2026-11-11T00:34:04+08:00] 槽位完成 [22/36 61.1%] after_ms=5.405417 stopped=False
+[2026-11-11T00:34:04+08:00] 槽位 23/36 (61.1%) phase=3 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:04+08:00] Before 完成 mean_ms=5.252000 indexes=[]
+[2026-11-11T00:34:04+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:04+08:00] 准备执行动作 action=CREATE index=I3
+[2026-11-11T00:34:04+08:00] 动作完成 status=applied ddl_ms=50.254 indexes=['I3']；开始 After 测量
+[2026-11-11T00:34:04+08:00] 槽位完成 [23/36 63.9%] after_ms=3.106083 stopped=False
+[2026-11-11T00:34:04+08:00] 槽位 24/36 (63.9%) phase=3 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:04+08:00] Before 完成 mean_ms=3.099875 indexes=['I3']
+[2026-11-11T00:34:04+08:00] 正在计算固定规则动作
+[2026-11-11T00:34:04+08:00] 准备执行动作 action=CREATE index=I4
+[2026-11-11T00:34:04+08:00] 动作完成 status=applied ddl_ms=50.733 indexes=['I3', 'I4']；开始 After 测量
+[2026-11-11T00:34:05+08:00] 槽位完成 [24/36 66.7%] after_ms=2.022208 stopped=False
+[2026-11-11T00:34:05+08:00] 运行完成 [2/3] repeat=1 condition=Rule baseline model_calls=0 indexes=['I3', 'I4']
+[2026-11-11T00:34:05+08:00] 运行开始 [3/3] repeat=1 condition=Autonomous tuning：检查环境并清理候选索引
+[2026-11-11T00:34:05+08:00] 阶段开始 repeat=1 condition=Autonomous tuning phase=1 stopped=False
+[2026-11-11T00:34:05+08:00] 槽位 25/36 (66.7%) phase=1 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:05+08:00] Before 完成 mean_ms=5.113750 indexes=[]
+[2026-11-11T00:34:05+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:34:06+08:00] 模型调用完成 elapsed_ms=1166.3 status=None error=None
+[2026-11-11T00:34:06+08:00] 准备执行动作 action=CREATE index=I1
+[2026-11-11T00:34:06+08:00] 动作完成 status=applied ddl_ms=39.661 indexes=['I1']；开始 After 测量
+[2026-11-11T00:34:07+08:00] 槽位完成 [25/36 69.4%] after_ms=1.239000 stopped=False
+[2026-11-11T00:34:07+08:00] 槽位 26/36 (69.4%) phase=1 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:07+08:00] Before 完成 mean_ms=1.240292 indexes=['I1']
+[2026-11-11T00:34:07+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:34:22+08:00] 模型调用完成 elapsed_ms=1572.0 status=None error=None
+[2026-11-11T00:34:22+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:34:22+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1']；开始 After 测量
+[2026-11-11T00:34:22+08:00] 槽位完成 [26/36 72.2%] after_ms=1.234458 stopped=False
+[2026-11-11T00:34:22+08:00] 槽位 27/36 (72.2%) phase=1 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:22+08:00] Before 完成 mean_ms=1.298167 indexes=['I1']
+[2026-11-11T00:34:22+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:34:36+08:00] 模型调用完成 elapsed_ms=1064.6 status=None error=None
+[2026-11-11T00:34:36+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:34:36+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1']；开始 After 测量
+[2026-11-11T00:34:36+08:00] 槽位完成 [27/36 75.0%] after_ms=1.288417 stopped=False
+[2026-11-11T00:34:36+08:00] 槽位 28/36 (75.0%) phase=1 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:37+08:00] Before 完成 mean_ms=1.232917 indexes=['I1']
+[2026-11-11T00:34:37+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:34:52+08:00] 模型调用完成 elapsed_ms=1235.4 status=None error=None
+[2026-11-11T00:34:52+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:34:52+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1']；开始 After 测量
+[2026-11-11T00:34:52+08:00] 槽位完成 [28/36 77.8%] after_ms=1.167208 stopped=False
+[2026-11-11T00:34:52+08:00] 阶段开始 repeat=1 condition=Autonomous tuning phase=2 stopped=False
+[2026-11-11T00:34:52+08:00] 槽位 29/36 (77.8%) phase=2 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:34:52+08:00] Before 完成 mean_ms=4.370542 indexes=['I1']
+[2026-11-11T00:34:52+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:35:07+08:00] 模型调用完成 elapsed_ms=1415.2 status=None error=None
+[2026-11-11T00:35:07+08:00] 准备执行动作 action=CREATE index=I5
+[2026-11-11T00:35:07+08:00] 动作完成 status=applied ddl_ms=51.116 indexes=['I1', 'I5']；开始 After 测量
+[2026-11-11T00:35:07+08:00] 槽位完成 [29/36 80.6%] after_ms=0.478417 stopped=False
+[2026-11-11T00:35:07+08:00] 槽位 30/36 (80.6%) phase=2 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:35:07+08:00] Before 完成 mean_ms=0.531708 indexes=['I1', 'I5']
+[2026-11-11T00:35:07+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:35:22+08:00] 模型调用完成 elapsed_ms=1678.0 status=None error=None
+[2026-11-11T00:35:22+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:35:22+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1', 'I5']；开始 After 测量
+[2026-11-11T00:35:22+08:00] 槽位完成 [30/36 83.3%] after_ms=0.570958 stopped=True
+[2026-11-11T00:35:22+08:00] 槽位 31/36 (83.3%) phase=2 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:35:22+08:00] Before 完成 mean_ms=0.560833 indexes=['I1', 'I5']
+[2026-11-11T00:35:22+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:35:22+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1', 'I5']；开始 After 测量
+[2026-11-11T00:35:22+08:00] 槽位完成 [31/36 86.1%] after_ms=0.564375 stopped=True
+[2026-11-11T00:35:22+08:00] 槽位 32/36 (86.1%) phase=2 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:35:22+08:00] Before 完成 mean_ms=0.574250 indexes=['I1', 'I5']
+[2026-11-11T00:35:22+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:35:22+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I1', 'I5']；开始 After 测量
+[2026-11-11T00:35:22+08:00] 槽位完成 [32/36 88.9%] after_ms=0.563917 stopped=True
+[2026-11-11T00:35:22+08:00] 阶段开始 repeat=1 condition=Autonomous tuning phase=3 stopped=False
+[2026-11-11T00:35:22+08:00] 槽位 33/36 (88.9%) phase=3 slot=1：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:35:22+08:00] Before 完成 mean_ms=2.297875 indexes=['I1', 'I5']
+[2026-11-11T00:35:22+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:35:37+08:00] 模型调用完成 elapsed_ms=1484.3 status=None error=None
+[2026-11-11T00:35:37+08:00] 准备执行动作 action=DROP index=I1
+[2026-11-11T00:35:37+08:00] 动作完成 status=applied ddl_ms=1.479 indexes=['I5']；开始 After 测量
+[2026-11-11T00:35:37+08:00] 槽位完成 [33/36 91.7%] after_ms=3.302208 stopped=False
+[2026-11-11T00:35:37+08:00] 槽位 34/36 (91.7%) phase=3 slot=2：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:35:37+08:00] Before 完成 mean_ms=3.350042 indexes=['I5']
+[2026-11-11T00:35:37+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:35:52+08:00] 模型调用完成 elapsed_ms=1391.8 status=None error=None
+[2026-11-11T00:35:52+08:00] 准备执行动作 action=CREATE index=I3
+[2026-11-11T00:35:52+08:00] 动作完成 status=applied ddl_ms=41.199 indexes=['I3', 'I5']；开始 After 测量
+[2026-11-11T00:35:52+08:00] 槽位完成 [34/36 94.4%] after_ms=1.948875 stopped=False
+[2026-11-11T00:35:52+08:00] 槽位 35/36 (94.4%) phase=3 slot=3：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:35:52+08:00] Before 完成 mean_ms=1.952167 indexes=['I3', 'I5']
+[2026-11-11T00:35:52+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:36:06+08:00] 模型调用完成 elapsed_ms=1221.9 status=None error=None
+[2026-11-11T00:36:06+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:36:07+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I3', 'I5']；开始 After 测量
+[2026-11-11T00:36:07+08:00] 槽位完成 [35/36 97.2%] after_ms=1.950875 stopped=False
+[2026-11-11T00:36:07+08:00] 槽位 36/36 (97.2%) phase=3 slot=4：开始 Before 测量（24条预热 + 24条采样）
+[2026-11-11T00:36:07+08:00] Before 完成 mean_ms=1.938792 indexes=['I3', 'I5']
+[2026-11-11T00:36:07+08:00] 正在调用模型并执行本地收益/成本评估
+[2026-11-11T00:36:22+08:00] 模型调用完成 elapsed_ms=1684.5 status=None error=None
+[2026-11-11T00:36:22+08:00] 准备执行动作 action=NOOP index=None
+[2026-11-11T00:36:22+08:00] 动作完成 status=noop ddl_ms=0.000 indexes=['I3', 'I5']；开始 After 测量
+[2026-11-11T00:36:22+08:00] 槽位完成 [36/36 100.0%] after_ms=1.949542 stopped=False
+[2026-11-11T00:36:22+08:00] 运行完成 [3/3] repeat=1 condition=Autonomous tuning model_calls=10 indexes=['I3', 'I5']
+[2026-11-11T00:36:22+08:00] 实验完成 slots=36/36 model_calls=10
+{"log": "artifacts/development/events.jsonl", "completed": true}

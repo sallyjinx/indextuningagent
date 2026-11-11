@@ -1,0 +1,3603 @@
+{
+  "schema_version": 1,
+  "source_log": "/home/ldz1/IndexTuningAgent-improved-20261110-201721/artifacts/formal/events.jsonl",
+  "source_sha256": "a4c3b590567d8c7acff59f2aeeb26edc8535be42da106f719312f7fa9f1e0a78",
+  "integrity": {
+    "valid": true,
+    "complete": true,
+    "formal_ready": true,
+    "mode": "formal",
+    "study_kind": "assignment",
+    "errors": [],
+    "warnings": [],
+    "counts": {
+      "run_starts": 9,
+      "run_ends": 9,
+      "phases": 27,
+      "slots": 108,
+      "measurements": 216,
+      "model_calls": 32
+    },
+    "model_calls_by_run": {
+      "1:autonomous": 12,
+      "2:autonomous": 10,
+      "3:autonomous": 10
+    },
+    "status_counts": {
+      "noop": 67,
+      "applied": 41
+    }
+  },
+  "metadata": {
+    "event": "experiment_start",
+    "timestamp": "2026-11-10T12:19:52.465587+00:00",
+    "mode": "formal",
+    "seed": 29,
+    "repeats": 3,
+    "manifest_sha256": "c3e1c2fe337172eb6af6e1c9b134a7e383f2b338677ee23b5004e60b991bc35c",
+    "freeze": {
+      "schema_version": 2,
+      "created_utc": "2026-11-10T12:19:52.147179+00:00",
+      "source_hashes": {
+        "compatibility/condition-aliases.json": "ce6f730774462d48d57278bc3c297bc5b5e45c6d2e100a8a49c9908609d03332",
+        "compose.yaml": "c69a7c895e4ad68eed9ae978b0a888f52c753bcb50a3c54c6e57720914a5570f",
+        "manifests/development.json": "8d09dcc6a694bd3a477c4e2d0dca7cf7299b11bf2d47d50f25044ca00e28799e",
+        "manifests/formal.json": "f95add8cdf5c7e5763d9973d7427cbbf60fa55102746cff46db9301c0ae58473",
+        "prompts/system.txt": "e84a16a335117431a7f08ef3247d7f4db982895816e171c1c4a3831f4f82a0b9",
+        "pyproject.toml": "a1ef3661285dae0306f3925f41d1835ba87bb0be7d91350b5d9eac2e0193cb25",
+        "requirements.lock": "d2a8f024942cdc5ef9ee0b1abcee736bb58177f9bcc64ef0a06c9d8fabe149f0",
+        "scripts/bootstrap_postgres.sh": "3d4a6eb373b782c8a9b2b8bd1e488081addd34ebc43e25a3d6004170ad02ef2a",
+        "scripts/build_postgres16.sh": "e7ca487fdd82323102cbe61fa67fc98b11cb5d77aad2fc5d06abdfef941fa053",
+        "scripts/package_submission.py": "a48f05ed069e5b8954c0ef62b6b2bb824913810632cec9b9e19ccdcb4022aa3a",
+        "scripts/run_full_experiment.sh": "c096d4478565f5877b67b914444aab17a192b14b3515e384561826cdce1548a6",
+        "sql/init.sql": "054ceb72eb42e6357645d39d161bcedb6d226fce8d8361fbcf2f09dab386b288",
+        "src/pg_tuning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/pg_tuning/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+        "src/pg_tuning/analysis.py": "58370f524bddeb4ba08239f82d68327a4f7b01cdc1aad8b8424eaddd72b2ebe8",
+        "src/pg_tuning/catalog.py": "b598796996faf887ff995d419c148ce1d836fc13f5adad63643ce2dc0c4698e1",
+        "src/pg_tuning/cli.py": "042979e9a45343e119ce4768e81b2a1876c7571771a77e772111780677569d50",
+        "src/pg_tuning/conditions.py": "87c1790ac4d94b56d0ced77e7bc516549626180ad976dd2cd7779adab6552fb2",
+        "src/pg_tuning/controller.py": "fd08a9bbace7a6466615d5358c2657acd6a5eb16b4c585e5a30b6f743b25cde7",
+        "src/pg_tuning/database.py": "07efb6b4011bc14fdc9894041f3e5441c62167961631ab2a06823776bd6a3f97",
+        "src/pg_tuning/measurement.py": "28ad625182d511643eb256c04be099b9cca760f78b45c978403d14d527ad15ac",
+        "src/pg_tuning/model.py": "519c93d711559d190ac73e34254ff3f60b21ad4a01d9182a21dd0f9679e3409e",
+        "src/pg_tuning/policy.py": "0c2b23935beeac94811175225ba36f2cc43065bada48c2f562a779214ebf0cb2",
+        "src/pg_tuning/reproducibility.py": "d9f892d662b4514098983fb2523bf341127660aef0db29229c38c767370d7354",
+        "src/pg_tuning/workload.py": "ffb471774606d828cf22c1d887c3b30aaf21c551a58ed222fd1a0e2ee5e152bf",
+        "tests/test_analysis_objective.py": "0b3a166e5a3d1cd3d8fb0fdb0d6fa42ed673749641852b14bcea1784ff512616",
+        "tests/test_model_provider_compatibility.py": "8e3138a182e16c32c1a2d51dba2cdc0dc416d105a5c6e3845bd29a0d6880f9ed",
+        "tests/test_policy_improvements.py": "38adeca99cc7aa94de629789c25ae6a9535a60099e5b25db1fb28e8d5b047773",
+        "tests/test_reproducibility_calibration.py": "d404254623444808ead1ddcab96b762b539d84a680631d68198c7aaf9b0b3fef"
+      },
+      "content_sha256": "a64a391e444c6dd548608e72dae6b2dde1cb02acf34c528132989c77c25db872",
+      "model_config": {
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-flash",
+        "timeout_seconds": 60.0,
+        "connect_timeout_seconds": 10.0,
+        "min_request_interval_seconds": 15.0,
+        "temperature": 0.0,
+        "max_completion_tokens": 400,
+        "token_limit_parameter": "max_tokens",
+        "reasoning_effort": "omit",
+        "thinking": "disabled",
+        "proxy_url": "http://127.0.0.1:7891",
+        "automatic_retries": 0,
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "dataset": {
+        "row_count": 200000,
+        "sha256": "2d94920b3dd78639206e0ed5540e3f1be566a97b5fedb4c8a89b21d964958572",
+        "schema": "assignment-v1"
+      },
+      "database": {
+        "server_version": 160015,
+        "database": "index_agent",
+        "settings": {
+          "TimeZone": "Asia/Shanghai",
+          "autovacuum": "on",
+          "block_size": "8192",
+          "cpu_index_tuple_cost": "0.005",
+          "cpu_operator_cost": "0.0025",
+          "cpu_tuple_cost": "0.01",
+          "default_statistics_target": "100",
+          "effective_cache_size": "524288",
+          "enable_bitmapscan": "on",
+          "enable_indexonlyscan": "on",
+          "enable_indexscan": "on",
+          "enable_seqscan": "on",
+          "jit": "on",
+          "maintenance_work_mem": "65536",
+          "max_parallel_maintenance_workers": "2",
+          "max_parallel_workers": "8",
+          "max_parallel_workers_per_gather": "2",
+          "plan_cache_mode": "auto",
+          "random_page_cost": "4",
+          "seq_page_cost": "1",
+          "server_encoding": "UTF8",
+          "server_version": "16.15",
+          "shared_buffers": "16384",
+          "track_io_timing": "off",
+          "work_mem": "4096"
+        }
+      },
+      "machine": {
+        "python": "3.12.13",
+        "platform": "Linux-5.15.0-202-generic-x86_64-with-glibc2.35",
+        "machine": "x86_64",
+        "cpu": "Intel(R) Core(TM) Ultra 9 285K",
+        "logical_cpus": 24,
+        "memory": "MemTotal:       131216604 kB",
+        "packages": {
+          "psycopg": "3.3.8",
+          "httpx": "0.28.1",
+          "matplotlib": "3.11.2",
+          "pytest": "9.2.0"
+        }
+      },
+      "policy_calibration": {
+        "ddl_cost_priors": {
+          "CREATE": {
+            "I1": {
+              "median_ms": 45.8388919942081,
+              "samples": 1
+            },
+            "I5": {
+              "median_ms": 59.19447704218328,
+              "samples": 1
+            }
+          },
+          "DROP": {
+            "I5": {
+              "median_ms": 2.022554981522262,
+              "samples": 1
+            }
+          }
+        },
+        "source": "seed-11 autonomous successful applied DDL only"
+      },
+      "development_log_sha256": "3d3fcd79b3e8fa8fc4e3413625c01f31076cc096bceb885584125ee551d1d620",
+      "development_log": "artifacts/development/events.jsonl",
+      "formal_seed": 29,
+      "formal_repeats": 3,
+      "policy_input_excludes": [
+        "seed",
+        "phase",
+        "repeat",
+        "manifest"
+      ]
+    },
+    "source_hashes": {
+      "compatibility/condition-aliases.json": "ce6f730774462d48d57278bc3c297bc5b5e45c6d2e100a8a49c9908609d03332",
+      "compose.yaml": "c69a7c895e4ad68eed9ae978b0a888f52c753bcb50a3c54c6e57720914a5570f",
+      "manifests/development.json": "8d09dcc6a694bd3a477c4e2d0dca7cf7299b11bf2d47d50f25044ca00e28799e",
+      "manifests/formal.json": "f95add8cdf5c7e5763d9973d7427cbbf60fa55102746cff46db9301c0ae58473",
+      "prompts/system.txt": "e84a16a335117431a7f08ef3247d7f4db982895816e171c1c4a3831f4f82a0b9",
+      "pyproject.toml": "a1ef3661285dae0306f3925f41d1835ba87bb0be7d91350b5d9eac2e0193cb25",
+      "requirements.lock": "d2a8f024942cdc5ef9ee0b1abcee736bb58177f9bcc64ef0a06c9d8fabe149f0",
+      "scripts/bootstrap_postgres.sh": "3d4a6eb373b782c8a9b2b8bd1e488081addd34ebc43e25a3d6004170ad02ef2a",
+      "scripts/build_postgres16.sh": "e7ca487fdd82323102cbe61fa67fc98b11cb5d77aad2fc5d06abdfef941fa053",
+      "scripts/package_submission.py": "a48f05ed069e5b8954c0ef62b6b2bb824913810632cec9b9e19ccdcb4022aa3a",
+      "scripts/run_full_experiment.sh": "c096d4478565f5877b67b914444aab17a192b14b3515e384561826cdce1548a6",
+      "sql/init.sql": "054ceb72eb42e6357645d39d161bcedb6d226fce8d8361fbcf2f09dab386b288",
+      "src/pg_tuning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/pg_tuning/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "src/pg_tuning/analysis.py": "58370f524bddeb4ba08239f82d68327a4f7b01cdc1aad8b8424eaddd72b2ebe8",
+      "src/pg_tuning/catalog.py": "b598796996faf887ff995d419c148ce1d836fc13f5adad63643ce2dc0c4698e1",
+      "src/pg_tuning/cli.py": "042979e9a45343e119ce4768e81b2a1876c7571771a77e772111780677569d50",
+      "src/pg_tuning/conditions.py": "87c1790ac4d94b56d0ced77e7bc516549626180ad976dd2cd7779adab6552fb2",
+      "src/pg_tuning/controller.py": "fd08a9bbace7a6466615d5358c2657acd6a5eb16b4c585e5a30b6f743b25cde7",
+      "src/pg_tuning/database.py": "07efb6b4011bc14fdc9894041f3e5441c62167961631ab2a06823776bd6a3f97",
+      "src/pg_tuning/measurement.py": "28ad625182d511643eb256c04be099b9cca760f78b45c978403d14d527ad15ac",
+      "src/pg_tuning/model.py": "519c93d711559d190ac73e34254ff3f60b21ad4a01d9182a21dd0f9679e3409e",
+      "src/pg_tuning/policy.py": "0c2b23935beeac94811175225ba36f2cc43065bada48c2f562a779214ebf0cb2",
+      "src/pg_tuning/reproducibility.py": "d9f892d662b4514098983fb2523bf341127660aef0db29229c38c767370d7354",
+      "src/pg_tuning/workload.py": "ffb471774606d828cf22c1d887c3b30aaf21c551a58ed222fd1a0e2ee5e152bf",
+      "tests/test_analysis_objective.py": "0b3a166e5a3d1cd3d8fb0fdb0d6fa42ed673749641852b14bcea1784ff512616",
+      "tests/test_model_provider_compatibility.py": "8e3138a182e16c32c1a2d51dba2cdc0dc416d105a5c6e3845bd29a0d6880f9ed",
+      "tests/test_policy_improvements.py": "38adeca99cc7aa94de629789c25ae6a9535a60099e5b25db1fb28e8d5b047773",
+      "tests/test_reproducibility_calibration.py": "d404254623444808ead1ddcab96b762b539d84a680631d68198c7aaf9b0b3fef"
+    },
+    "environment": {
+      "python": "3.12.13",
+      "platform": "Linux-5.15.0-202-generic-x86_64-with-glibc2.35",
+      "machine": "x86_64",
+      "cpu": "Intel(R) Core(TM) Ultra 9 285K",
+      "logical_cpus": 24,
+      "memory": "MemTotal:       131216604 kB",
+      "packages": {
+        "psycopg": "3.3.8",
+        "httpx": "0.28.1",
+        "matplotlib": "3.11.2",
+        "pytest": "9.2.0"
+      },
+      "database": {
+        "server_version": 160015,
+        "database": "index_agent",
+        "settings": {
+          "TimeZone": "Asia/Shanghai",
+          "autovacuum": "on",
+          "block_size": "8192",
+          "cpu_index_tuple_cost": "0.005",
+          "cpu_operator_cost": "0.0025",
+          "cpu_tuple_cost": "0.01",
+          "default_statistics_target": "100",
+          "effective_cache_size": "524288",
+          "enable_bitmapscan": "on",
+          "enable_indexonlyscan": "on",
+          "enable_indexscan": "on",
+          "enable_seqscan": "on",
+          "jit": "on",
+          "maintenance_work_mem": "65536",
+          "max_parallel_maintenance_workers": "2",
+          "max_parallel_workers": "8",
+          "max_parallel_workers_per_gather": "2",
+          "plan_cache_mode": "auto",
+          "random_page_cost": "4",
+          "seq_page_cost": "1",
+          "server_encoding": "UTF8",
+          "server_version": "16.15",
+          "shared_buffers": "16384",
+          "track_io_timing": "off",
+          "work_mem": "4096"
+        }
+      }
+    },
+    "dataset": {
+      "row_count": 200000,
+      "sha256": "2d94920b3dd78639206e0ed5540e3f1be566a97b5fedb4c8a89b21d964958572",
+      "schema": "assignment-v1"
+    },
+    "model_config": {
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-flash",
+      "timeout_seconds": 60.0,
+      "connect_timeout_seconds": 10.0,
+      "min_request_interval_seconds": 15.0,
+      "temperature": 0.0,
+      "max_completion_tokens": 400,
+      "token_limit_parameter": "max_tokens",
+      "reasoning_effort": "omit",
+      "thinking": "disabled",
+      "proxy_url": "http://127.0.0.1:7891",
+      "automatic_retries": 0,
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "study_kind": "assignment",
+    "policy_config": {
+      "horizon_batches": 16,
+      "batch_size": 24,
+      "cost_multiplier": 1.25,
+      "min_gain_ms": 0.01,
+      "prior_fraction": 0.15,
+      "shrinkage": 2.0,
+      "default_create_ms": 100.0,
+      "default_drop_ms": 10.0,
+      "cooldown_slots": 2,
+      "max_calls": 12,
+      "drift_similarity_threshold": 0.75,
+      "old_history_weight": 0.1,
+      "continue_after_policy_rejection": true,
+      "ddl_cost_priors": {
+        "CREATE": {
+          "I1": {
+            "median_ms": 45.8388919942081,
+            "samples": 1
+          },
+          "I5": {
+            "median_ms": 59.19447704218328,
+            "samples": 1
+          }
+        },
+        "DROP": {
+          "I5": {
+            "median_ms": 2.022554981522262,
+            "samples": 1
+          }
+        }
+      }
+    }
+  },
+  "result_kind": "formal",
+  "formal_results": [
+    {
+      "condition": "autonomous",
+      "phase": 1,
+      "n": 3,
+      "mean_ms": 0.7482916666666667,
+      "sample_stddev_ms": 0.03028364176140865,
+      "root_shared_hit_blocks": 377.4166666666667,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "autonomous",
+      "phase": 2,
+      "n": 3,
+      "mean_ms": 0.38975,
+      "sample_stddev_ms": 0.10264431744026443,
+      "root_shared_hit_blocks": 228.0,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "autonomous",
+      "phase": 3,
+      "n": 3,
+      "mean_ms": 1.368763888888889,
+      "sample_stddev_ms": 0.35418635321102643,
+      "root_shared_hit_blocks": 916.6111111111111,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "no_tuning",
+      "phase": 1,
+      "n": 3,
+      "mean_ms": 3.211777777777778,
+      "sample_stddev_ms": 0.3185135024973794,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "no_tuning",
+      "phase": 2,
+      "n": 3,
+      "mean_ms": 3.190902777777778,
+      "sample_stddev_ms": 0.20792239610231011,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "no_tuning",
+      "phase": 3,
+      "n": 3,
+      "mean_ms": 3.3075,
+      "sample_stddev_ms": 0.17612481271183167,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "rule",
+      "phase": 1,
+      "n": 3,
+      "mean_ms": 0.6809305555555556,
+      "sample_stddev_ms": 0.0038383873687517097,
+      "root_shared_hit_blocks": 359.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "rule",
+      "phase": 2,
+      "n": 3,
+      "mean_ms": 0.6762777777777778,
+      "sample_stddev_ms": 0.007305621567086627,
+      "root_shared_hit_blocks": 357.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "condition": "rule",
+      "phase": 3,
+      "n": 3,
+      "mean_ms": 1.0161944444444444,
+      "sample_stddev_ms": 0.004340205554954631,
+      "root_shared_hit_blocks": 892.5833333333334,
+      "root_shared_read_blocks": 0
+    }
+  ],
+  "development_results": [],
+  "exploratory_results": [],
+  "phase_final_observations": [
+    {
+      "repeat": 1,
+      "condition": "no_tuning",
+      "phase": 1,
+      "mean_ms": 3.0725,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "no_tuning",
+      "phase": 2,
+      "mean_ms": 3.1153333333333335,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "no_tuning",
+      "phase": 3,
+      "mean_ms": 3.10875,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "rule",
+      "phase": 1,
+      "mean_ms": 0.68325,
+      "root_shared_hit_blocks": 359.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "rule",
+      "phase": 2,
+      "mean_ms": 0.681125,
+      "root_shared_hit_blocks": 357.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "rule",
+      "phase": 3,
+      "mean_ms": 1.0179583333333333,
+      "root_shared_hit_blocks": 892.5833333333334,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "autonomous",
+      "phase": 1,
+      "mean_ms": 0.71475,
+      "root_shared_hit_blocks": 412.75,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "autonomous",
+      "phase": 2,
+      "mean_ms": 0.5017916666666666,
+      "root_shared_hit_blocks": 270.5,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 1,
+      "condition": "autonomous",
+      "phase": 3,
+      "mean_ms": 1.0433333333333332,
+      "root_shared_hit_blocks": 895.0416666666666,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "rule",
+      "phase": 1,
+      "mean_ms": 0.6830416666666667,
+      "root_shared_hit_blocks": 359.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "rule",
+      "phase": 2,
+      "mean_ms": 0.667875,
+      "root_shared_hit_blocks": 357.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "rule",
+      "phase": 3,
+      "mean_ms": 1.019375,
+      "root_shared_hit_blocks": 892.5833333333334,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "autonomous",
+      "phase": 1,
+      "mean_ms": 0.7565000000000001,
+      "root_shared_hit_blocks": 359.75,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "autonomous",
+      "phase": 2,
+      "mean_ms": 0.30025,
+      "root_shared_hit_blocks": 206.75,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "autonomous",
+      "phase": 3,
+      "mean_ms": 1.3169583333333332,
+      "root_shared_hit_blocks": 568.25,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "no_tuning",
+      "phase": 1,
+      "mean_ms": 2.986625,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "no_tuning",
+      "phase": 2,
+      "mean_ms": 3.0313333333333334,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 2,
+      "condition": "no_tuning",
+      "phase": 3,
+      "mean_ms": 3.4442083333333335,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "autonomous",
+      "phase": 1,
+      "mean_ms": 0.773625,
+      "root_shared_hit_blocks": 359.75,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "autonomous",
+      "phase": 2,
+      "mean_ms": 0.36720833333333336,
+      "root_shared_hit_blocks": 206.75,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "autonomous",
+      "phase": 3,
+      "mean_ms": 1.746,
+      "root_shared_hit_blocks": 1286.5416666666667,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "no_tuning",
+      "phase": 1,
+      "mean_ms": 3.576208333333333,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "no_tuning",
+      "phase": 2,
+      "mean_ms": 3.426041666666667,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "no_tuning",
+      "phase": 3,
+      "mean_ms": 3.3695416666666667,
+      "root_shared_hit_blocks": 1274,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "rule",
+      "phase": 1,
+      "mean_ms": 0.6765,
+      "root_shared_hit_blocks": 359.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "rule",
+      "phase": 2,
+      "mean_ms": 0.6798333333333333,
+      "root_shared_hit_blocks": 357.0833333333333,
+      "root_shared_read_blocks": 0
+    },
+    {
+      "repeat": 3,
+      "condition": "rule",
+      "phase": 3,
+      "mean_ms": 1.01125,
+      "root_shared_hit_blocks": 892.5833333333334,
+      "root_shared_read_blocks": 0
+    }
+  ],
+  "costs": {
+    "no_tuning": {
+      "slots": 36,
+      "create_attempts": 0,
+      "create_successes": 0,
+      "drop_attempts": 0,
+      "drop_successes": 0,
+      "create_submitted": 0,
+      "drop_submitted": 0,
+      "create_ddl_ms": 0.0,
+      "drop_ddl_ms": 0.0,
+      "ddl_ms": 0.0,
+      "model_calls": 0,
+      "model_ms": 0.0,
+      "rejected": 0,
+      "failed": 0,
+      "model_error": 0,
+      "invalid_response": 0,
+      "unauthorized_execution": 0,
+      "budget_violations": 0,
+      "budget_rejections": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "calls_without_usage": 0,
+      "known_token_subtotal": {}
+    },
+    "rule": {
+      "slots": 36,
+      "create_attempts": 18,
+      "create_successes": 18,
+      "drop_attempts": 12,
+      "drop_successes": 12,
+      "create_submitted": 18,
+      "drop_submitted": 12,
+      "create_ddl_ms": 767.9841338540427,
+      "drop_ddl_ms": 17.77966396184638,
+      "ddl_ms": 785.7637978158891,
+      "model_calls": 0,
+      "model_ms": 0.0,
+      "rejected": 0,
+      "failed": 0,
+      "model_error": 0,
+      "invalid_response": 0,
+      "unauthorized_execution": 0,
+      "budget_violations": 0,
+      "budget_rejections": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "calls_without_usage": 0,
+      "known_token_subtotal": {}
+    },
+    "autonomous": {
+      "slots": 36,
+      "create_attempts": 8,
+      "create_successes": 8,
+      "drop_attempts": 3,
+      "drop_successes": 3,
+      "create_submitted": 8,
+      "drop_submitted": 3,
+      "create_ddl_ms": 432.7760400483385,
+      "drop_ddl_ms": 6.305651040747762,
+      "ddl_ms": 439.08169108908623,
+      "model_calls": 32,
+      "model_ms": 52551.41886800993,
+      "rejected": 0,
+      "failed": 0,
+      "model_error": 0,
+      "invalid_response": 0,
+      "unauthorized_execution": 0,
+      "budget_violations": 0,
+      "budget_rejections": 0,
+      "prompt_tokens": 669582,
+      "completion_tokens": 1868,
+      "total_tokens": 671450,
+      "calls_without_usage": 0,
+      "known_token_subtotal": {
+        "prompt_tokens": 669582,
+        "completion_tokens": 1868,
+        "total_tokens": 671450
+      }
+    }
+  },
+  "cost_adjusted_results": [
+    {
+      "condition": "autonomous",
+      "phase": 1,
+      "n": 3,
+      "query_mean_ms": 0.7482916666666667,
+      "sample_stddev_ms": 0.03028364176140865,
+      "mean_tuning_ddl_ms": 60.55642400557796,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.1971237760598241,
+      "cost_adjusted_mean_ms": 0.9454154427264908
+    },
+    {
+      "condition": "autonomous",
+      "phase": 2,
+      "n": 3,
+      "query_mean_ms": 0.38975,
+      "sample_stddev_ms": 0.10264431744026443,
+      "mean_tuning_ddl_ms": 52.82023434604829,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.17194086701187594,
+      "cost_adjusted_mean_ms": 0.5616908670118759
+    },
+    {
+      "condition": "autonomous",
+      "phase": 3,
+      "n": 3,
+      "query_mean_ms": 1.368763888888889,
+      "sample_stddev_ms": 0.35418635321102643,
+      "mean_tuning_ddl_ms": 32.98390534473583,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.10736948354406195,
+      "cost_adjusted_mean_ms": 1.4761333724329508
+    },
+    {
+      "condition": "no_tuning",
+      "phase": 1,
+      "n": 3,
+      "query_mean_ms": 3.211777777777778,
+      "sample_stddev_ms": 0.3185135024973794,
+      "mean_tuning_ddl_ms": 0.0,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.0,
+      "cost_adjusted_mean_ms": 3.211777777777778
+    },
+    {
+      "condition": "no_tuning",
+      "phase": 2,
+      "n": 3,
+      "query_mean_ms": 3.190902777777778,
+      "sample_stddev_ms": 0.20792239610231011,
+      "mean_tuning_ddl_ms": 0.0,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.0,
+      "cost_adjusted_mean_ms": 3.190902777777778
+    },
+    {
+      "condition": "no_tuning",
+      "phase": 3,
+      "n": 3,
+      "query_mean_ms": 3.3075,
+      "sample_stddev_ms": 0.17612481271183167,
+      "mean_tuning_ddl_ms": 0.0,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.0,
+      "cost_adjusted_mean_ms": 3.3075
+    },
+    {
+      "condition": "rule",
+      "phase": 1,
+      "n": 3,
+      "query_mean_ms": 0.6809305555555556,
+      "sample_stddev_ms": 0.0038383873687517097,
+      "mean_tuning_ddl_ms": 94.62045063264668,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.30800927940314676,
+      "cost_adjusted_mean_ms": 0.9889398349587024
+    },
+    {
+      "condition": "rule",
+      "phase": 2,
+      "n": 3,
+      "query_mean_ms": 0.6762777777777778,
+      "sample_stddev_ms": 0.007305621567086627,
+      "mean_tuning_ddl_ms": 83.49353662924841,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.2717888562150013,
+      "cost_adjusted_mean_ms": 0.948066633992779
+    },
+    {
+      "condition": "rule",
+      "phase": 3,
+      "n": 3,
+      "query_mean_ms": 1.0161944444444444,
+      "sample_stddev_ms": 0.004340205554954631,
+      "mean_tuning_ddl_ms": 83.80727867673461,
+      "horizon_queries": 384,
+      "cost_multiplier": 1.25,
+      "risk_adjusted_ddl_ms_per_query": 0.27281015194249547,
+      "cost_adjusted_mean_ms": 1.2890045963869399
+    }
+  ],
+  "evaluation_objective": {
+    "primary": "cost_adjusted_mean_ms",
+    "formula": "query_mean_ms + cost_multiplier * mean_tuning_ddl_ms / horizon_queries",
+    "query_metric_preserved_separately": true,
+    "model_wall_time_included": false
+  },
+  "reset": {
+    "events": 10,
+    "ddl_ms": 25.933900964446366
+  },
+  "transitions": [
+    {
+      "repeat": 1,
+      "phase": 2,
+      "slot": 1,
+      "before_ms": 2.610875,
+      "after_ms": 0.32045833333333335,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I2",
+        "reason": "product_id 单列查询当前频次最高（10次），均为全表 Seq Scan 扫描约20万行仅返回约200行，建索引可显著降低实测开销。"
+      },
+      "final_action": {
+        "action": "CREATE",
+        "index": "I2",
+        "reason": "product_id 单列查询当前频次最高（10次），均为全表 Seq Scan 扫描约20万行仅返回约200行，建索引可显著降低实测开销。"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 0.375,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 0,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.01638944918541505,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.35055625000000007,
+              "eligible_current_ms": 2.3370416666666673,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.20076249999999998,
+              "eligible_current_ms": 1.3384166666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.00136875,
+              "eligible_current_ms": 0.009125,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.35055625000000007,
+              "eligible_current_ms": 2.3370416666666673,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.00136875,
+              "eligible_current_ms": 0.009125,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "decision": {
+            "predicted_saving_ms": 134.61360000000002,
+            "predicted_cost_ms": 47.766047006007284,
+            "cost_estimate": {
+              "ms": 47.766047006007284,
+              "source": "current_run_same_action",
+              "samples": 1
+            },
+            "required_saving_ms": 59.707558757509105,
+            "directional_gain_ms_per_query": 0.35055625000000007
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I1",
+        "I2"
+      ],
+      "ddl_ms": 45.578450022730976
+    },
+    {
+      "repeat": 1,
+      "phase": 2,
+      "slot": 2,
+      "before_ms": 0.3428333333333333,
+      "after_ms": 0.573875,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id+order_date 组合查询频次最高（8次），当前用 idx_agent_product 后过滤日期丢弃约190行/次，组合索引可减少堆访问。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 1,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.01638944918541505,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.7634722222222222,
+              "raw_mean_ms": 2.2904166666666668,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.047025,
+              "eligible_current_ms": 0.3135,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.0012875,
+              "eligible_current_ms": 0.008583333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.006981250000000001,
+              "eligible_current_ms": 0.046541666666666676,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0012875,
+              "eligible_current_ms": 0.008583333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I5",
+            "victim": "I1",
+            "predicted_saving_ms": -3.612748487199378,
+            "predicted_cost_ms": 61.21703202370554,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 76.52129002963193,
+            "gain_difference_ms_per_query": -0.009408199185415047
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I1",
+        "I2"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 1,
+      "phase": 2,
+      "slot": 3,
+      "before_ms": 0.39449999999999996,
+      "after_ms": 0.5098750000000001,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id+order_date 组合查询频次最高（8次），当前用 idx_agent_product 后过滤掉约190行/次，复合索引可减少堆扫描与过滤开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 2,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.01638944918541505,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.7634722222222222,
+              "raw_mean_ms": 2.2904166666666668,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.053225,
+              "eligible_current_ms": 0.35483333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.0016500000000000002,
+              "eligible_current_ms": 0.011000000000000001,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.0092375,
+              "eligible_current_ms": 0.06158333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0016500000000000002,
+              "eligible_current_ms": 0.011000000000000001,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I5",
+            "victim": "I1",
+            "predicted_saving_ms": -2.746348487199379,
+            "predicted_cost_ms": 61.21703202370554,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 76.52129002963193,
+            "gain_difference_ms_per_query": -0.007151949185415049
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I1",
+        "I2"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 1,
+      "phase": 2,
+      "slot": 4,
+      "before_ms": 0.3942083333333333,
+      "after_ms": 0.5017916666666666,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id+order_date 组合查询频次最高（8次），当前用 idx_agent_product 后过滤掉约190行/次，组合索引可减少堆扫描与过滤开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 3,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.01638944918541505,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.7634722222222222,
+              "raw_mean_ms": 2.2904166666666668,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.053799999999999994,
+              "eligible_current_ms": 0.35866666666666663,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.0015624999999999999,
+              "eligible_current_ms": 0.010416666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.00844375,
+              "eligible_current_ms": 0.05629166666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0015624999999999999,
+              "eligible_current_ms": 0.010416666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I5",
+            "victim": "I1",
+            "predicted_saving_ms": -3.0511484871993786,
+            "predicted_cost_ms": 61.21703202370554,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 76.52129002963193,
+            "gain_difference_ms_per_query": -0.007945699185415048
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I1",
+        "I2"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 1,
+      "phase": 3,
+      "slot": 1,
+      "before_ms": 1.4456666666666667,
+      "after_ms": 2.1910833333333333,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "order_date 范围查询当前频次最高（10次），均为并行 Seq Scan 扫描约20万行仅返回约8千行，建索引可显著降低实测开销。"
+      },
+      "final_action": {
+        "action": "DROP",
+        "index": "I2",
+        "reason": "Replacement expected savings exceed build/drop threshold; DROP first"
+      },
+      "policy": {
+        "interventions": [
+          "split_replacement_drop_first"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 0.5,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 0,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.02897942386831276,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.02827674897119342,
+              "raw_mean_ms": 2.2904166666666668,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.21514375000000005,
+              "eligible_current_ms": 1.434291666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.0024125,
+              "eligible_current_ms": 0.016083333333333335,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.0026125,
+              "eligible_current_ms": 0.017416666666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0024125,
+              "eligible_current_ms": 0.016083333333333335,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I3",
+            "victim": "I2",
+            "predicted_saving_ms": 71.75692839506175,
+            "predicted_cost_ms": 48.69480349589139,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 46.67224851436913,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 60.86850436986424,
+            "gain_difference_ms_per_query": 0.18686700102880663
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I1"
+      ],
+      "ddl_ms": 1.8864209996536374
+    },
+    {
+      "repeat": 1,
+      "phase": 3,
+      "slot": 2,
+      "before_ms": 2.251125,
+      "after_ms": 1.0534999999999999,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "order_date 范围查询当前频次最高（10次），均为并行 Seq Scan 扫描约20万行仅返回约8千行，建索引可显著降低实测开销。"
+      },
+      "final_action": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "Complete previously justified replacement in a separate slot"
+      },
+      "policy": {
+        "interventions": [
+          "complete_pending_replacement"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 1,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.02897942386831276,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.1845921104414301,
+              "raw_mean_ms": 0.783099593495935,
+              "uncertainty_ms": 0.23832775536390963,
+              "effective_samples": 1.025,
+              "samples": 2,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.29863124999999996,
+              "eligible_current_ms": 1.990875,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.00259375,
+              "eligible_current_ms": 0.017291666666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.12248124999999999,
+              "eligible_current_ms": 0.8165416666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.00259375,
+              "eligible_current_ms": 0.017291666666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "pending_replacement": {
+            "target": "I3",
+            "victim": "I2",
+            "evidence": {
+              "target": "I3",
+              "victim": "I2",
+              "predicted_saving_ms": 71.75692839506175,
+              "predicted_cost_ms": 48.69480349589139,
+              "drop_cost": {
+                "ms": 2.022554981522262,
+                "source": "frozen_development_same_action",
+                "samples": 1
+              },
+              "create_cost": {
+                "ms": 46.67224851436913,
+                "source": "current_run_same_action",
+                "samples": 2
+              },
+              "required_saving_ms": 60.86850436986424,
+              "gain_difference_ms_per_query": 0.18686700102880663
+            }
+          },
+          "decision": {
+            "predicted_saving_ms": 114.67439999999999,
+            "predicted_cost_ms": 46.67224851436913,
+            "cost_estimate": {
+              "ms": 46.67224851436913,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 58.34031064296141,
+            "directional_gain_ms_per_query": 0.29863124999999996
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I1",
+        "I3"
+      ],
+      "ddl_ms": 48.024780000559986
+    },
+    {
+      "repeat": 1,
+      "phase": 3,
+      "slot": 3,
+      "before_ms": 1.0497916666666667,
+      "after_ms": 1.0543333333333333,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id+order_date 组合查询频次高，当前用日期索引后过滤大量行，组合索引可显著减少堆扫描。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 2,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.02897942386831276,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.1845921104414301,
+              "raw_mean_ms": 0.783099593495935,
+              "uncertainty_ms": 0.23832775536390963,
+              "effective_samples": 1.025,
+              "samples": 2,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.3992083333333334,
+              "raw_mean_ms": 1.1976250000000002,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.007875000000000002,
+              "eligible_current_ms": 0.05250000000000001,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.06804374999999999,
+              "eligible_current_ms": 0.45362499999999994,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.007875000000000002,
+              "eligible_current_ms": 0.05250000000000001,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I5",
+            "victim": "I1",
+            "predicted_saving_ms": 15.000701234567895,
+            "predicted_cost_ms": 61.08089804183692,
+            "drop_cost": {
+              "ms": 1.8864209996536374,
+              "source": "current_run_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 76.35112255229615,
+            "gain_difference_ms_per_query": 0.03906432613168723
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I1",
+        "I3"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 1,
+      "phase": 3,
+      "slot": 4,
+      "before_ms": 1.0455,
+      "after_ms": 1.0433333333333332,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id+order_date 组合查询（模板5）频次4次，当前走 idx_agent_date 后过滤丢弃约1.6万行，组合索引可显著减少堆扫描与过滤开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 3,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.02897942386831276,
+              "raw_mean_ms": 2.3473333333333333,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.1845921104414301,
+              "raw_mean_ms": 0.783099593495935,
+              "uncertainty_ms": 0.23832775536390963,
+              "effective_samples": 1.025,
+              "samples": 2,
+              "source": "measured_history"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.3992083333333334,
+              "raw_mean_ms": 1.1976250000000002,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.008025,
+              "eligible_current_ms": 0.0535,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.06774999999999999,
+              "eligible_current_ms": 0.45166666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.008025,
+              "eligible_current_ms": 0.0535,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I5",
+            "victim": "I1",
+            "predicted_saving_ms": 14.887901234567897,
+            "predicted_cost_ms": 61.08089804183692,
+            "drop_cost": {
+              "ms": 1.8864209996536374,
+              "source": "current_run_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 76.35112255229615,
+            "gain_difference_ms_per_query": 0.03877057613168723
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I1",
+        "I3"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 2,
+      "slot": 1,
+      "before_ms": 2.8056666666666668,
+      "after_ms": 0.33320833333333333,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id 单列与 product_id+order_date 查询频次高且均走全表扫描，过滤后仅约10行，复合索引可显著降低缓冲区与执行时间。"
+      },
+      "final_action": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "product_id 单列与 product_id+order_date 查询频次高且均走全表扫描，过滤后仅约10行，复合索引可显著降低缓冲区与执行时间。"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 0.375,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 0,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.0011312499999999999,
+              "eligible_current_ms": 0.007541666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.37871874999999994,
+              "eligible_current_ms": 2.5247916666666663,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.22988749999999997,
+              "eligible_current_ms": 1.5325833333333332,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.017652346780449964,
+              "raw_mean_ms": 2.5282083333333336,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.37871874999999994,
+              "eligible_current_ms": 2.5247916666666663,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0011312499999999999,
+              "eligible_current_ms": 0.007541666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "decision": {
+            "predicted_saving_ms": 145.42799999999997,
+            "predicted_cost_ms": 59.19447704218328,
+            "cost_estimate": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 73.9930963027291,
+            "directional_gain_ms_per_query": 0.37871874999999994
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 56.255266012158245
+    },
+    {
+      "repeat": 2,
+      "phase": 2,
+      "slot": 2,
+      "before_ms": 0.3363333333333333,
+      "after_ms": 0.401,
+      "proposal": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "现有 I4/I5 已覆盖高频 customer/product 及日期组合查询，当前计划均走索引且执行时间低，无值得调整的证据。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "现有 I4/I5 已覆盖高频 customer/product 及日期组合查询，当前计划均走索引且执行时间低，无值得调整的证据。"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 1,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.00075,
+              "eligible_current_ms": 0.005,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0036562500000000006,
+              "eligible_current_ms": 0.024375000000000004,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.046656249999999996,
+              "eligible_current_ms": 0.31104166666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.017652346780449964,
+              "raw_mean_ms": 2.5282083333333336,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.8241527777777778,
+              "raw_mean_ms": 2.4724583333333334,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.00075,
+              "eligible_current_ms": 0.005,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 2,
+      "slot": 3,
+      "before_ms": 0.29683333333333334,
+      "after_ms": 0.31808333333333333,
+      "proposal": null,
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Modification stopped for current batch"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {}
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 2,
+      "slot": 4,
+      "before_ms": 0.2946666666666667,
+      "after_ms": 0.30025,
+      "proposal": null,
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Modification stopped for current batch"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {}
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 3,
+      "slot": 1,
+      "before_ms": 1.3490416666666667,
+      "after_ms": 1.3882083333333333,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "order_date 范围查询频次最高（10次）且均走并行全表扫描，每次约3.1ms、1274缓冲区；I3 可显著降低当前负载实测开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 0.5,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 0,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.0011375,
+              "eligible_current_ms": 0.007583333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.00125,
+              "eligible_current_ms": 0.008333333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.200775,
+              "eligible_current_ms": 1.3385,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.03121244855967079,
+              "raw_mean_ms": 2.5282083333333336,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.030524176954732515,
+              "raw_mean_ms": 2.4724583333333334,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0011375,
+              "eligible_current_ms": 0.007583333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I3",
+            "victim": "I5",
+            "predicted_saving_ms": 65.37631604938272,
+            "predicted_cost_ms": 69.16588300373405,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 67.14332802221179,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 86.45735375466757,
+            "gain_difference_ms_per_query": 0.1702508230452675
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 3,
+      "slot": 2,
+      "before_ms": 1.3844166666666666,
+      "after_ms": 1.376125,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "order_date 范围查询频次最高且当前均走并行全表扫描，每次约3ms、1274 缓冲区；I3 可显著降低该主要负载开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 1,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.00124375,
+              "eligible_current_ms": 0.008291666666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0013874999999999998,
+              "eligible_current_ms": 0.00925,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.20599375,
+              "eligible_current_ms": 1.3732916666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.03121244855967079,
+              "raw_mean_ms": 2.5282083333333336,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.030524176954732515,
+              "raw_mean_ms": 2.4724583333333334,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.00124375,
+              "eligible_current_ms": 0.008291666666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I3",
+            "victim": "I5",
+            "predicted_saving_ms": 67.38031604938271,
+            "predicted_cost_ms": 69.16588300373405,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 67.14332802221179,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 86.45735375466757,
+            "gain_difference_ms_per_query": 0.1754695730452675
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 3,
+      "slot": 3,
+      "before_ms": 1.3670416666666667,
+      "after_ms": 1.3429166666666668,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "order_date 范围查询频次最高（10次）且均走并行全表扫描，每次约3.2ms、1274缓冲区；I3 可显著降低当前主要开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 2,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.00114375,
+              "eligible_current_ms": 0.007625,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0012812499999999998,
+              "eligible_current_ms": 0.008541666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.20346250000000002,
+              "eligible_current_ms": 1.3564166666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.03121244855967079,
+              "raw_mean_ms": 2.5282083333333336,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.030524176954732515,
+              "raw_mean_ms": 2.4724583333333334,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.00114375,
+              "eligible_current_ms": 0.007625,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I3",
+            "victim": "I5",
+            "predicted_saving_ms": 66.40831604938273,
+            "predicted_cost_ms": 69.16588300373405,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 67.14332802221179,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 86.45735375466757,
+            "gain_difference_ms_per_query": 0.17293832304526752
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 2,
+      "phase": 3,
+      "slot": 4,
+      "before_ms": 1.367875,
+      "after_ms": 1.3169583333333332,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "order_date 范围查询频次最高（10次）且均走并行全表扫描，每次约3ms、1274缓冲区；I3 可显著降低当前主要开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 3,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.0011625,
+              "eligible_current_ms": 0.00775,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0012625,
+              "eligible_current_ms": 0.008416666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.20357500000000006,
+              "eligible_current_ms": 1.357166666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.03121244855967079,
+              "raw_mean_ms": 2.5282083333333336,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.030524176954732515,
+              "raw_mean_ms": 2.4724583333333334,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0011625,
+              "eligible_current_ms": 0.00775,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I3",
+            "victim": "I5",
+            "predicted_saving_ms": 66.45151604938273,
+            "predicted_cost_ms": 69.16588300373405,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 67.14332802221179,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 86.45735375466757,
+            "gain_difference_ms_per_query": 0.17305082304526753
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 3,
+      "phase": 2,
+      "slot": 1,
+      "before_ms": 2.9594583333333335,
+      "after_ms": 0.3339166666666667,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "模板2/5高频且当前计划均为全表Seq Scan，每次过滤约20万行；product_id+order_date复合索引可同时服务等值与范围查询，显著降低当前实测开销。"
+      },
+      "final_action": {
+        "action": "CREATE",
+        "index": "I5",
+        "reason": "模板2/5高频且当前计划均为全表Seq Scan，每次过滤约20万行；product_id+order_date复合索引可同时服务等值与范围查询，显著降低当前实测开销。"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 0.375,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 0,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.0011875,
+              "eligible_current_ms": 0.007916666666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.3912562500000001,
+              "eligible_current_ms": 2.6083750000000006,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.2527625,
+              "eligible_current_ms": 1.6850833333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.01764856477889837,
+              "raw_mean_ms": 2.5276666666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.3912562500000001,
+              "eligible_current_ms": 2.6083750000000006,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0011875,
+              "eligible_current_ms": 0.007916666666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "decision": {
+            "predicted_saving_ms": 150.24240000000003,
+            "predicted_cost_ms": 59.19447704218328,
+            "cost_estimate": {
+              "ms": 59.19447704218328,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 73.9930963027291,
+            "directional_gain_ms_per_query": 0.3912562500000001
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 56.626987003255635
+    },
+    {
+      "repeat": 3,
+      "phase": 2,
+      "slot": 2,
+      "before_ms": 0.36383333333333334,
+      "after_ms": 0.468125,
+      "proposal": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "当前高频模板2/5已由I5覆盖，模板1/4由I4覆盖，计划均走索引且实测开销低；模板3仅2次且Seq Scan约4ms，新建date索引收益不足以覆盖DDL成本。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "当前高频模板2/5已由I5覆盖，模板1/4由I4覆盖，计划均走索引且实测开销低；模板3仅2次且Seq Scan约4ms，新建date索引收益不足以覆盖DDL成本。"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 4,
+            "old_records": 4,
+            "current_records": 1,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.0007375,
+              "eligible_current_ms": 0.004916666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0036125000000000003,
+              "eligible_current_ms": 0.024083333333333335,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.050824999999999995,
+              "eligible_current_ms": 0.3388333333333333,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.01764856477889837,
+              "raw_mean_ms": 2.5276666666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.0140625,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.8751805555555556,
+              "raw_mean_ms": 2.625541666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.0007375,
+              "eligible_current_ms": 0.004916666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 3,
+      "phase": 2,
+      "slot": 3,
+      "before_ms": 0.36545833333333333,
+      "after_ms": 0.3690833333333333,
+      "proposal": null,
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Modification stopped for current batch"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {}
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 3,
+      "phase": 2,
+      "slot": 4,
+      "before_ms": 0.3724583333333333,
+      "after_ms": 0.36720833333333336,
+      "proposal": null,
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Modification stopped for current batch"
+      },
+      "policy": {
+        "interventions": [],
+        "evidence": {}
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I4",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 3,
+      "phase": 3,
+      "slot": 1,
+      "before_ms": 1.5867916666666666,
+      "after_ms": 2.6100416666666666,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "模板3当前频次10且计划为并行Seq Scan，每次过滤约9万行、耗时约3-4ms；order_date索引可显著降低当前实测开销。"
+      },
+      "final_action": {
+        "action": "DROP",
+        "index": "I4",
+        "reason": "Replacement expected savings exceed build/drop threshold; DROP first"
+      },
+      "policy": {
+        "interventions": [
+          "split_replacement_drop_first"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 0.5,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 0,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.00115625,
+              "eligible_current_ms": 0.0077083333333333335,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0012625,
+              "eligible_current_ms": 0.008416666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.236425,
+              "eligible_current_ms": 1.5761666666666667,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.031205761316872433,
+              "raw_mean_ms": 2.5276666666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.03241409465020577,
+              "raw_mean_ms": 2.625541666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.00115625,
+              "eligible_current_ms": 0.0077083333333333335,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I3",
+            "victim": "I4",
+            "predicted_saving_ms": 78.80418765432098,
+            "predicted_cost_ms": 58.27196597238071,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_same_action",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 56.24941099085845,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 72.83995746547589,
+            "gain_difference_ms_per_query": 0.20521923868312755
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I5"
+      ],
+      "ddl_ms": 2.1812160266563296
+    },
+    {
+      "repeat": 3,
+      "phase": 3,
+      "slot": 2,
+      "before_ms": 2.5272083333333333,
+      "after_ms": 1.0011666666666668,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "模板3当前频次10且计划为并行Seq Scan，每次过滤约9万行、耗时约3-4ms；order_date索引可显著降低当前实测开销，且I4已删除腾出预算。"
+      },
+      "final_action": {
+        "action": "CREATE",
+        "index": "I3",
+        "reason": "Complete previously justified replacement in a separate slot"
+      },
+      "policy": {
+        "interventions": [
+          "complete_pending_replacement"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 1,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.13858750000000003,
+              "eligible_current_ms": 0.9239166666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0018375000000000002,
+              "eligible_current_ms": 0.012250000000000002,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.34056875000000003,
+              "eligible_current_ms": 2.2704583333333335,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.2805198366404687,
+              "raw_mean_ms": 1.0599430894308945,
+              "uncertainty_ms": 0.23206747397975513,
+              "effective_samples": 1.025,
+              "samples": 2,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.03241409465020577,
+              "raw_mean_ms": 2.625541666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.13858750000000003,
+              "eligible_current_ms": 0.9239166666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "pending_replacement": {
+            "target": "I3",
+            "victim": "I4",
+            "evidence": {
+              "target": "I3",
+              "victim": "I4",
+              "predicted_saving_ms": 78.80418765432098,
+              "predicted_cost_ms": 58.27196597238071,
+              "drop_cost": {
+                "ms": 2.022554981522262,
+                "source": "frozen_development_same_action",
+                "samples": 1
+              },
+              "create_cost": {
+                "ms": 56.24941099085845,
+                "source": "current_run_same_action",
+                "samples": 2
+              },
+              "required_saving_ms": 72.83995746547589,
+              "gain_difference_ms_per_query": 0.20521923868312755
+            }
+          },
+          "decision": {
+            "predicted_saving_ms": 130.7784,
+            "predicted_cost_ms": 56.24941099085845,
+            "cost_estimate": {
+              "ms": 56.24941099085845,
+              "source": "current_run_same_action",
+              "samples": 2
+            },
+            "required_saving_ms": 70.31176373857306,
+            "directional_gain_ms_per_query": 0.34056875000000003
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I3",
+        "I5"
+      ],
+      "ddl_ms": 44.621284992899746
+    },
+    {
+      "repeat": 3,
+      "phase": 3,
+      "slot": 3,
+      "before_ms": 0.9912083333333334,
+      "after_ms": 0.9964583333333333,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I6",
+        "reason": "模板6按customer_id+product_id等值查询，当前走I5仅用product_id过滤后回表过滤customer_id，每次移除约200行；复合索引可精确命中，降低当前实测开销。"
+      },
+      "final_action": {
+        "action": "NOOP",
+        "index": null,
+        "reason": "Replacement expected savings do not cover cost threshold"
+      },
+      "policy": {
+        "interventions": [
+          "replacement_below_threshold"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 2,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.06566875,
+              "eligible_current_ms": 0.43779166666666663,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.0015624999999999999,
+              "eligible_current_ms": 0.010416666666666666,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.5086805555555555,
+              "raw_mean_ms": 1.5260416666666665,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.2805198366404687,
+              "raw_mean_ms": 1.0599430894308945,
+              "uncertainty_ms": 0.23206747397975513,
+              "effective_samples": 1.025,
+              "samples": 2,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.03241409465020577,
+              "raw_mean_ms": 2.625541666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.06566875,
+              "eligible_current_ms": 0.43779166666666663,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I6",
+            "victim": "I5",
+            "predicted_saving_ms": 12.769787654320984,
+            "predicted_cost_ms": 57.89438995998353,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 55.871834978461266,
+              "source": "current_run_same_action",
+              "samples": 3
+            },
+            "required_saving_ms": 72.36798744997941,
+            "gain_difference_ms_per_query": 0.03325465534979423
+          }
+        }
+      },
+      "status": "noop",
+      "actual_indexes": [
+        "I3",
+        "I5"
+      ],
+      "ddl_ms": 0.0
+    },
+    {
+      "repeat": 3,
+      "phase": 3,
+      "slot": 4,
+      "before_ms": 1.0089166666666667,
+      "after_ms": 1.746,
+      "proposal": {
+        "action": "CREATE",
+        "index": "I4",
+        "reason": "模板4按customer_id+order_date过滤，当前走idx_agent_date后过滤掉约1.6万行，每次约1.2ms；I4复合索引可同时服务等值与范围，显著降低当前实测开销。"
+      },
+      "final_action": {
+        "action": "DROP",
+        "index": "I5",
+        "reason": "Replacement expected savings exceed build/drop threshold; DROP first"
+      },
+      "policy": {
+        "interventions": [
+          "split_replacement_drop_first"
+        ],
+        "evidence": {
+          "config": {
+            "horizon_batches": 16,
+            "batch_size": 24,
+            "cost_multiplier": 1.25,
+            "min_gain_ms": 0.01,
+            "prior_fraction": 0.15,
+            "shrinkage": 2.0,
+            "default_create_ms": 100.0,
+            "default_drop_ms": 10.0,
+            "cooldown_slots": 2,
+            "max_calls": 12,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1,
+            "continue_after_policy_rejection": true,
+            "ddl_cost_priors": {
+              "CREATE": {
+                "I1": {
+                  "median_ms": 45.8388919942081,
+                  "samples": 1
+                },
+                "I5": {
+                  "median_ms": 59.19447704218328,
+                  "samples": 1
+                }
+              },
+              "DROP": {
+                "I5": {
+                  "median_ms": 2.022554981522262,
+                  "samples": 1
+                }
+              }
+            }
+          },
+          "workload_regime": {
+            "drift_detected": true,
+            "current_similarity": 1.0,
+            "current_regime_start": 8,
+            "old_records": 8,
+            "current_records": 3,
+            "drift_similarity_threshold": 0.75,
+            "old_history_weight": 0.1
+          },
+          "estimates": {
+            "I1": {
+              "benefit_ms_per_query": 0.06686874999999999,
+              "eligible_current_ms": 0.44579166666666664,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I2": {
+              "benefit_ms_per_query": 0.002125,
+              "eligible_current_ms": 0.014166666666666668,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            },
+            "I3": {
+              "benefit_ms_per_query": 0.5086805555555555,
+              "raw_mean_ms": 1.5260416666666665,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 1.0,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I4": {
+              "benefit_ms_per_query": 0.2805198366404687,
+              "raw_mean_ms": 1.0599430894308945,
+              "uncertainty_ms": 0.23206747397975513,
+              "effective_samples": 1.025,
+              "samples": 2,
+              "source": "measured_history"
+            },
+            "I5": {
+              "benefit_ms_per_query": 0.03241409465020577,
+              "raw_mean_ms": 2.625541666666667,
+              "uncertainty_ms": 0.0,
+              "effective_samples": 0.025,
+              "samples": 1,
+              "source": "measured_history"
+            },
+            "I6": {
+              "benefit_ms_per_query": 0.06686874999999999,
+              "eligible_current_ms": 0.44579166666666664,
+              "effective_samples": 0.0,
+              "samples": 0,
+              "source": "exploratory_current_cost_prior"
+            }
+          },
+          "replacement": {
+            "target": "I4",
+            "victim": "I5",
+            "predicted_saving_ms": 95.27260492426096,
+            "predicted_cost_ms": 57.89438995998353,
+            "drop_cost": {
+              "ms": 2.022554981522262,
+              "source": "frozen_development_exact",
+              "samples": 1
+            },
+            "create_cost": {
+              "ms": 55.871834978461266,
+              "source": "current_run_exact",
+              "samples": 1
+            },
+            "required_saving_ms": 72.36798744997941,
+            "gain_difference_ms_per_query": 0.24810574199026292
+          }
+        }
+      },
+      "status": "applied",
+      "actual_indexes": [
+        "I3"
+      ],
+      "ddl_ms": 2.2380140144377947
+    }
+  ],
+  "figures": [
+    "artifacts/results/trajectory.png",
+    "artifacts/results/trajectory.pdf",
+    "artifacts/results/phase_final.png",
+    "artifacts/results/phase_final.pdf"
+  ],
+  "metric_notes": {
+    "query_time": "Arithmetic mean of 24 EXPLAIN Execution Time values, milliseconds per query; excludes warm-up, initialization, DDL and model wall time.",
+    "cost_adjusted": "Policy-aligned query mean plus risk-adjusted tuning DDL amortized over the configured prediction horizon; raw query and DDL components remain separate.",
+    "sample_stddev": "sqrt(sum((x-mean(x))**2)/(n-1)); unavailable for n=1.",
+    "buffers": "Mean root Plan Shared Hit/Read Blocks per query; child nodes are not summed.",
+    "tokens": "Each token field is N/A if any called response lacks that field; known_token_subtotal is separately disclosed.",
+    "attempts": "CREATE/DROP attempts count final CREATE/DROP requests (execution.attempted), including preexecution rejections. Submitted DDL (executed) and successes are separate.",
+    "reset_cost": "Condition-reset DDL is separate from tuning actions/costs."
+  }
+}

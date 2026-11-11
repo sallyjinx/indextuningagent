@@ -1,0 +1,21 @@
+name: postgresql-autonomous-tuning-agent
+services:
+  postgres:
+    image: postgres:16.15-bookworm
+    environment:
+      POSTGRES_DB: index_agent
+      POSTGRES_USER: agent
+      POSTGRES_PASSWORD: ${AGENT_DB_PASSWORD:?Set AGENT_DB_PASSWORD in your local environment}
+      POSTGRES_INITDB_ARGS: --encoding=UTF8 --locale=C
+    ports:
+      - "127.0.0.1:${AGENT_DB_PORT:-55432}:5432"
+    volumes:
+      - agent_pg16_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agent -d index_agent"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: "no"
+volumes:
+  agent_pg16_data:

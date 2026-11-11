@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-11-10T16:36:24.131351+00:00",
+  "source_hashes": {
+    "compatibility/condition-aliases.json": "ce6f730774462d48d57278bc3c297bc5b5e45c6d2e100a8a49c9908609d03332",
+    "compose.yaml": "c69a7c895e4ad68eed9ae978b0a888f52c753bcb50a3c54c6e57720914a5570f",
+    "manifests/development.json": "8d09dcc6a694bd3a477c4e2d0dca7cf7299b11bf2d47d50f25044ca00e28799e",
+    "manifests/formal.json": "f95add8cdf5c7e5763d9973d7427cbbf60fa55102746cff46db9301c0ae58473",
+    "prompts/system.txt": "e84a16a335117431a7f08ef3247d7f4db982895816e171c1c4a3831f4f82a0b9",
+    "pyproject.toml": "a1ef3661285dae0306f3925f41d1835ba87bb0be7d91350b5d9eac2e0193cb25",
+    "requirements.lock": "d2a8f024942cdc5ef9ee0b1abcee736bb58177f9bcc64ef0a06c9d8fabe149f0",
+    "scripts/bootstrap_postgres.sh": "997c506e20b7250e0e57759b2a672d68c455c4aaf782bbc26878cd5fe9d5c067",
+    "scripts/build_postgres16.sh": "e7ca487fdd82323102cbe61fa67fc98b11cb5d77aad2fc5d06abdfef941fa053",
+    "scripts/package_submission.py": "a48f05ed069e5b8954c0ef62b6b2bb824913810632cec9b9e19ccdcb4022aa3a",
+    "scripts/run_full_experiment.sh": "c096d4478565f5877b67b914444aab17a192b14b3515e384561826cdce1548a6",
+    "sql/init.sql": "054ceb72eb42e6357645d39d161bcedb6d226fce8d8361fbcf2f09dab386b288",
+    "src/pg_tuning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/pg_tuning/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/pg_tuning/analysis.py": "58370f524bddeb4ba08239f82d68327a4f7b01cdc1aad8b8424eaddd72b2ebe8",
+    "src/pg_tuning/catalog.py": "b598796996faf887ff995d419c148ce1d836fc13f5adad63643ce2dc0c4698e1",
+    "src/pg_tuning/cli.py": "042979e9a45343e119ce4768e81b2a1876c7571771a77e772111780677569d50",
+    "src/pg_tuning/conditions.py": "87c1790ac4d94b56d0ced77e7bc516549626180ad976dd2cd7779adab6552fb2",
+    "src/pg_tuning/controller.py": "fd08a9bbace7a6466615d5358c2657acd6a5eb16b4c585e5a30b6f743b25cde7",
+    "src/pg_tuning/database.py": "07efb6b4011bc14fdc9894041f3e5441c62167961631ab2a06823776bd6a3f97",
+    "src/pg_tuning/measurement.py": "28ad625182d511643eb256c04be099b9cca760f78b45c978403d14d527ad15ac",
+    "src/pg_tuning/model.py": "519c93d711559d190ac73e34254ff3f60b21ad4a01d9182a21dd0f9679e3409e",
+    "src/pg_tuning/policy.py": "0c2b23935beeac94811175225ba36f2cc43065bada48c2f562a779214ebf0cb2",
+    "src/pg_tuning/reproducibility.py": "d9f892d662b4514098983fb2523bf341127660aef0db29229c38c767370d7354",
+    "src/pg_tuning/workload.py": "ffb471774606d828cf22c1d887c3b30aaf21c551a58ed222fd1a0e2ee5e152bf",
+    "tests/test_analysis_objective.py": "0b3a166e5a3d1cd3d8fb0fdb0d6fa42ed673749641852b14bcea1784ff512616",
+    "tests/test_model_provider_compatibility.py": "8e3138a182e16c32c1a2d51dba2cdc0dc416d105a5c6e3845bd29a0d6880f9ed",
+    "tests/test_policy_improvements.py": "38adeca99cc7aa94de629789c25ae6a9535a60099e5b25db1fb28e8d5b047773",
+    "tests/test_reproducibility_calibration.py": "d404254623444808ead1ddcab96b762b539d84a680631d68198c7aaf9b0b3fef"
+  },
+  "content_sha256": "2b5482b355f252a2d5511f5f518c0256d74f78d70fd9becb608d56696c4ea31c",
+  "model_config": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "timeout_seconds": 60.0,
+    "connect_timeout_seconds": 10.0,
+    "min_request_interval_seconds": 15.0,
+    "temperature": 0.0,
+    "max_completion_tokens": 400,
+    "token_limit_parameter": "max_tokens",
+    "reasoning_effort": "omit",
+    "thinking": "disabled",
+    "proxy_url": "http://127.0.0.1:7891",
+    "automatic_retries": 0,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "dataset": {
+    "row_count": 200000,
+    "sha256": "2d94920b3dd78639206e0ed5540e3f1be566a97b5fedb4c8a89b21d964958572",
+    "schema": "assignment-v1"
+  },
+  "database": {
+    "server_version": 160015,
+    "database": "index_agent",
+    "settings": {
+      "TimeZone": "Asia/Shanghai",
+      "autovacuum": "on",
+      "block_size": "8192",
+      "cpu_index_tuple_cost": "0.005",
+      "cpu_operator_cost": "0.0025",
+      "cpu_tuple_cost": "0.01",
+      "default_statistics_target": "100",
+      "effective_cache_size": "524288",
+      "enable_bitmapscan": "on",
+      "enable_indexonlyscan": "on",
+      "enable_indexscan": "on",
+      "enable_seqscan": "on",
+      "jit": "on",
+      "maintenance_work_mem": "65536",
+      "max_parallel_maintenance_workers": "2",
+      "max_parallel_workers": "8",
+      "max_parallel_workers_per_gather": "2",
+      "plan_cache_mode": "auto",
+      "random_page_cost": "4",
+      "seq_page_cost": "1",
+      "server_encoding": "UTF8",
+      "server_version": "16.15",
+      "shared_buffers": "512",
+      "track_io_timing": "off",
+      "work_mem": "4096"
+    }
+  },
+  "machine": {
+    "python": "3.12.13",
+    "platform": "Linux-5.15.0-202-generic-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "cpu": "Intel(R) Core(TM) Ultra 9 285K",
+    "logical_cpus": 24,
+    "memory": "MemTotal:       131216604 kB",
+    "packages": {
+      "psycopg": "3.3.8",
+      "httpx": "0.28.1",
+      "matplotlib": "3.11.2",
+      "pytest": "9.2.0"
+    }
+  },
+  "policy_calibration": {
+    "ddl_cost_priors": {
+      "CREATE": {
+        "I1": {
+          "median_ms": 39.66085199499503,
+          "samples": 1
+        },
+        "I3": {
+          "median_ms": 41.199157014489174,
+          "samples": 1
+        },
+        "I5": {
+          "median_ms": 51.116310991346836,
+          "samples": 1
+        }
+      },
+      "DROP": {
+        "I1": {
+          "median_ms": 1.479108992498368,
+          "samples": 1
+        }
+      }
+    },
+    "source": "seed-11 autonomous successful applied DDL only"
+  },
+  "development_log_sha256": "c2d54dcf9deef17bdcdce15ead6361c6ceea5c1d80c75a5dd4e13b10707fbcc7",
+  "development_log": "artifacts/development/events.jsonl",
+  "formal_seed": 29,
+  "formal_repeats": 3,
+  "policy_input_excludes": [
+    "seed",
+    "phase",
+    "repeat",
+    "manifest"
+  ]
+}
